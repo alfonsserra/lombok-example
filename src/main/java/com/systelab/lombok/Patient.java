@@ -3,9 +3,9 @@ package com.systelab.lombok;
 import lombok.*;
 
 import java.time.LocalDate;
-import java.util.Date;
 
-@Builder(builderMethodName = "newBuilder",toBuilder = true)
+
+@Builder(builderMethodName = "newBuilder", toBuilder = true)
 @Getter
 @EqualsAndHashCode
 @ToString

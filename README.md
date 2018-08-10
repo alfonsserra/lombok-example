@@ -1,5 +1,6 @@
-#Lombok Example
+# Lombok Example
 
+Repository to test LomBok features
 
 ## Getting Started
 
