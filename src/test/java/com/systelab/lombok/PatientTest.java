@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class PatientTest {
 
     @Test
-    public void testStrings() {
+    public void basicAssignationTest() {
         Patient mario = Patient.newBuilder().name("Mario").surname("Fusco").email("mfusco@gmail.it").dob(LocalDate.of(1966,1,1)).build();
         assertEquals("Mario", mario.getName());
     }
