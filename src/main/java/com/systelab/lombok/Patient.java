@@ -3,6 +3,7 @@ package com.systelab.lombok;
 import lombok.*;
 
 import java.time.LocalDate;
+import java.util.Set;
 
 
 @Builder(builderMethodName = "newBuilder", toBuilder = true)
@@ -15,14 +16,16 @@ public class Patient {
     @Builder.Default
     private long created = System.currentTimeMillis();
 
-    private Long id;
+    private final Long id;
 
-    private String surname;
+    @NonNull
+    private final String surname;
 
-    private String name;
-
-    private String email;
+    @NonNull
+    private final String name;
 
     private LocalDate dob;
+
+    @Singular private Set<String> emails;
 
 }
